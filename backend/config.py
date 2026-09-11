@@ -20,7 +20,7 @@ IS_LINUX = platform.system() == "Linux"
 # ── Server ────────────────────────────────────────────────────
 HOST = os.getenv("HOST", "127.0.0.1")
 PORT = int(os.getenv("PORT", "8000"))
-CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
+CORS_ORIGINS = os.getenv("CORS_ORIGINS","http://localhost:5173,http://localhost:3000,https://pawanbhatia1304.github.io").split(",")
 MOCK_MODE = os.getenv("FORENSIVAULT_MOCK", "0").lower() in ("1", "true", "yes")
 
 # ── Lighthouse (IPFS) ────────────────────────────────────────
